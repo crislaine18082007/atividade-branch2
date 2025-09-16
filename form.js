@@ -1,3 +1,4 @@
 function validarEmail(email) {
-  return email.includes("@");
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
 }
